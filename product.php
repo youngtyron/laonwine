@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<?php session_start(); ?>
+<html lang="en-US" class="no-js scheme_default">
+<head>
+	<title>1837. Cabernet Merlot &#8211; Laon Wine House</title>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel='stylesheet' id='trx_addons-icons-css' href='js/vendor/plugins/trx_addons/css/font-icons/css/trx_addons_icons-embedded.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='magnific-popup-css' href='js/vendor/plugins/trx_addons/js/magnific/magnific-popup.min.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='trx_addons-css' href='js/vendor/plugins/trx_addons/css/trx_addons.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='woocommerce_prettyPhoto_css-css' href='js/vendor/plugins/woocommerce/assets/css/prettyPhoto.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='woocommerce-layout-css' href='js/vendor/plugins/woocommerce/assets/css/woocommerce-layout.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='woocommerce-smallscreen-css' href='js/vendor/plugins/woocommerce/assets/css/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)' />
+	<link rel='stylesheet' id='woocommerce-general-css' href='js/vendor/plugins/woocommerce/assets/css/woocommerce.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='laon_wine_house-font-google_fonts-css' href='http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic%7CLato:400,700&amp;subset=latin,latin-ext' type='text/css' media='all' />
+	<link rel='stylesheet' id='laon_wine_house-fontello-css' href='css/fontello/css/fontello-embedded.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='laon_wine_house-main-css' href='css/style.min.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='laon_wine_house-animation-css' href='css/animation.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='laon_wine_house-colors-css' href='css/colors.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='laon_wine_house-styles-css' href='css/styles.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='laon_wine_house-custom-css' href='css/custom.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='laon_wine_house-responsive-css' href='css/responsive.min.css' type='text/css' media='all' />
+</head>
+<body class="single single-product postid-403 woocommerce woocommerce-page body_tag body_style_wide scheme_default blog_mode_shop  is_stream blog_style_excerpt sidebar_hide expand_content header_style_header-1 header_position_default header_title_on menu_style_top no_layout vc_responsive">
+
+<?php 
+if (isset($_GET['id'])) {
+	$id = $_GET['id'];
+	include 'api.php';
+	$api = new Api();
+	$product = $api->getProduct($id);
+}
+?>
+
+	<div class="body_wrap">
+		<div class="page_wrap">
+			<header class="top_panel top_panel_style_1 without_bg_image with_featured_image scheme_default">
+				<a class="menu_mobile_button"></a>
+				<div class="top_panel_fixed_wrap"></div>
+				<div class="top_panel_navi	scheme_default">
+					<div class="menu_main_wrap clearfix">
+						<div class="wrap">
+							<a class="logo" href="index.html"><img src="images/logo2.svg" class="logo_main" alt="" /></a>
+							<nav class="menu_main_nav_area menu_hover_fade">
+								<ul id="menu_main" class="menu_main_nav">
+									<li class="menu-item menu-item-has-children"><a href="index.html"><span>Вино</span></a>
+										<ul class="sub-menu">
+											<li class="menu-item"><a href="index.html"><span>Красные вина</span></a></li>
+											<li class="menu-item"><a href="home2.html"><span>Белые вина</span></a></li>
+										</ul>
+									</li>
+									<li class="menu-item"><a href="wine-list.html"><span>Шампанское</span></a></li>
+									<li class="menu-item menu-item-has-children"><a href="blog-archive.html"><span>Виски</span></a>
+										<ul class="sub-menu">
+											<li class="menu-item menu-item-has-children"><a href="blog-style-chess-2-columns-2.html"><span>Blog Style 1</span></a>
+												<ul class="sub-menu">
+													<li class="menu-item"><a href="blog-style-chess-2-columns-2.html"><span>2 columns</span></a></li>
+													<li class="menu-item"><a href="blog-style-chess-4-columns.html"><span>4 columns</span></a></li>
+													<li class="menu-item"><a href="blog-style-chess-6-columns.html"><span>6 columns</span></a></li>
+												</ul>
+											</li>
+											<li class="menu-item menu-item-has-children"><a href="blog-style-2.html"><span>Blog Style 2</span></a>
+												<ul class="sub-menu">
+													<li class="menu-item"><a href="blog-archive.html"><span>1 column</span></a></li>
+													<li class="menu-item"><a href="blog-style-2.html"><span>2 columns</span></a></li>
+													<li class="menu-item"><a href="blog-style-classic-3-columns.html"><span>3 columns</span></a></li>
+												</ul>
+											</li>
+											<li class="menu-item menu-item-has-children"><a href="blog-style-portfolio-2-columns.html"><span>Portfolio</span></a>
+												<ul class="sub-menu">
+													<li class="menu-item"><a href="blog-style-portfolio-2-columns.html"><span>2 columns</span></a></li>
+													<li class="menu-item"><a href="blog-style-portfolio-3-columns.html"><span>3 columns</span></a></li>
+													<li class="menu-item"><a href="blog-style-portfolio-4-columns.html"><span>4 columns</span></a></li>
+												</ul>
+											</li>
+											<li class="menu-item"><a href="post-formats.html"><span>Post Formats</span></a></li>
+											<li class="menu-item"><a href="single-post.html"><span>Post with comments</span></a></li>
+										</ul>
+									</li>
+									<li class="menu-item menu-item-has-children"><a href="buy-wines.html"><span>Коньяк</span></a>
+										<ul class="sub-menu">
+											<li class="menu-item"><a href="cart.html"><span>Cart</span></a></li>
+											<li class="menu-item"><a href="checkout.html"><span>Checkout</span></a></li>
+											<li class="menu-item"><a href="account.html"><span>My Account</span></a></li>
+										</ul>
+									</li>
+									<li class="menu-item menu-item-has-children"><a href="#"><span>Аксессуары</span></a>
+										<ul class="sub-menu">
+											<li class="menu-item"><a href="typography.html"><span>Typography</span></a></li>
+											<li class="menu-item"><a href="shortcodes.html"><span>Shortcodes</span></a></li>
+											<li class="menu-item"><a href="events.html"><span>Events</span></a></li>
+											<li class="menu-item"><a href="non-existing-page.html"><span>Page 404</span></a></li>
+										</ul>
+									</li>
+									<li class="menu-item menu-item-has-children"><a href="contacts.html"><span>О нас</span></a>
+										<ul class="sub-menu">
+											<li class="menu-item"><a href="contacts.html"><span>Contact Us</span></a></li>
+											<li class="menu-item"><a href="about-us.html"><span>About Us</span></a></li>
+										</ul>
+									</li>
+									<li class="menu-item"><a href="wine-list.html"><span>Контакты</span></a></li>
+								</ul>
+								<!-- <div class="search_wrap search_style_fullscreen">
+									<div class="search_form_wrap">
+										<form role="search" method="get" class="search_form" action="#">
+											<input type="text" class="search_field" placeholder="Search" value="" name="s">
+											<button type="submit" class="search_submit icon-search"></button>
+											<a class="search_close icon-cancel"></a>
+										</form>
+									</div>
+									<div class="search_results widget_area">
+										<a href="#" class="search_results_close icon-cancel"></a>
+										<div class="search_results_content"></div>
+									</div>
+								</div> -->
+							</nav>
+						</div>
+					</div>
+		</div>
+		<div class="top_panel_title_wrap">
+			<div class="content_wrap">
+				<div class="top_panel_title">
+					<div class="page_title">
+						<!-- <div class="post_meta"> <span class="post_meta_item post_categories"><a href="shop.html" title="View all posts in Red wines">Red wines</a></span>
+						</div> -->
+						<h1 class="page_caption"><?=$product['name']?></h1>
+					</div>
+					<div class="breadcrumbs">
+						<a class="breadcrumbs_item home" href="index.html">Главная</a>
+						<span class="breadcrumbs_delimiter"></span>
+						<a href="shop.html">Каталог</a>
+						<? foreach($product['catalog'] as $index => $category): ?>
+							<span class="breadcrumbs_delimiter"></span>
+							<a class="breadcrumbs_item cat_post" href="<?=$category['url']?>"><?=$category['name']?></a>
+						<? endforeach; ?>						
+					</div>
+				</div>
+			</div>
+		</div>
+		</header>
+		<div class="menu_mobile_overlay"></div>
+		<div class="menu_mobile scheme_dark">
+			<div class="menu_mobile_inner">
+				<a class="menu_mobile_close icon-cancel"></a>
+				<nav class="menu_mobile_nav_area">
+					<ul id="menu_mobile" class="menu_mobile_nav">
+						<li class="menu-item menu-item-has-children"><a href="index.html"><span>Вино</span></a>
+							<ul class="sub-menu">
+								<li class="menu-item"><a href="index.html"><span>Красные вина</span></a></li>
+								<li class="menu-item"><a href="home2.html"><span>Белые вина</span></a></li>
+							</ul>
+						</li>
+						<li class="menu-item"><a href="wine-list.html"><span>Шампанское</span></a></li>
+						<li class="menu-item menu-item-has-children"><a href="blog-archive.html"><span>Виски</span></a>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-has-children"><a href="blog-style-chess-2-columns-2.html"><span>Blog Style 1</span></a>
+									<ul class="sub-menu">
+										<li class="menu-item"><a href="blog-style-chess-2-columns-2.html"><span>2 columns</span></a></li>
+										<li class="menu-item"><a href="blog-style-chess-4-columns.html"><span>4 columns</span></a></li>
+										<li class="menu-item"><a href="blog-style-chess-6-columns.html"><span>6 columns</span></a></li>
+									</ul>
+								</li>
+								<li class="menu-item menu-item-has-children"><a href="blog-style-2.html"><span>Blog Style 2</span></a>
+									<ul class="sub-menu">
+										<li class="menu-item"><a href="blog-archive.html"><span>1 column</span></a></li>
+										<li class="menu-item"><a href="blog-style-2.html"><span>2 columns</span></a></li>
+										<li class="menu-item"><a href="blog-style-classic-3-columns.html"><span>3 columns</span></a></li>
+									</ul>
+								</li>
+								<li class="menu-item menu-item-has-children"><a href="blog-style-portfolio-2-columns.html"><span>Portfolio</span></a>
+									<ul class="sub-menu">
+										<li class="menu-item"><a href="blog-style-portfolio-2-columns.html"><span>2 columns</span></a></li>
+										<li class="menu-item"><a href="blog-style-portfolio-3-columns.html"><span>3 columns</span></a></li>
+										<li class="menu-item"><a href="blog-style-portfolio-4-columns.html"><span>4 columns</span></a></li>
+									</ul>
+								</li>
+								<li class="menu-item"><a href="post-formats.html"><span>Post Formats</span></a></li>
+								<li class="menu-item"><a href="single-post.html"><span>Post with comments</span></a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-has-children"><a href="buy-wines.html"><span>Коньяк</span></a>
+							<ul class="sub-menu">
+								<li class="menu-item"><a href="cart.html"><span>Cart</span></a></li>
+								<li class="menu-item"><a href="checkout.html"><span>Checkout</span></a></li>
+								<li class="menu-item"><a href="account.html"><span>My Account</span></a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-has-children"><a href="#"><span>Аксессуары</span></a>
+							<ul class="sub-menu">
+								<li class="menu-item"><a href="typography.html"><span>Typography</span></a></li>
+								<li class="menu-item"><a href="shortcodes.html"><span>Shortcodes</span></a></li>
+								<li class="menu-item"><a href="events.html"><span>Events</span></a></li>
+								<li class="menu-item"><a href="non-existing-page.html"><span>Page 404</span></a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-has-children"><a href="contacts.html"><span>О нас</span></a>
+							<ul class="sub-menu">
+								<li class="menu-item"><a href="contacts.html"><span>Contact Us</span></a></li>
+								<li class="menu-item"><a href="about-us.html"><span>About Us</span></a></li>
+							</ul>
+						</li>
+						<li class="menu-item"><a href="wine-list.html"><span>Контакты</span></a></li>
+					</ul>
+				</nav>
+				<!-- <div class="search_mobile">
+					<div class="search_form_wrap">
+						<form role="search" method="get" class="search_form" action="#">
+							<input type="text" class="search_field" placeholder="Search ..." value="" name="s">
+							<button type="submit" class="search_submit icon-search" title="Start search"></button>
+						</form>
+					</div>
+				</div> -->
+				<div class="socials_mobile"><span class="social_item"><a href="https://twitter.com/grandcru_store" target="_blank" class="social_icons social_twitter"><span class="trx_addons_icon-twitter"></span></a>
+					</span><span class="social_item"><a href="https://www.facebook.com/grandcru.market/" target="_blank" class="social_icons social_facebook"><span class="trx_addons_icon-facebook"></span></a>
+					</span><span class="social_item"><a href="https://www.instagram.com/grandcru.store/" target="_blank" class="social_icons social_instagram"><span class="trx_addons_icon-instagram"></span></a>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="page_content_wrap scheme_default">
+			<div class="wrap">
+				<div class="content">
+					<div class="post_item_single post_type_product">
+						<nav class="woocommerce-breadcrumb"><a href="index.html">Главная</a>&nbsp;&#47;&nbsp;<a href="shop.html">Красные вина</a>&nbsp;&#47;&nbsp;1837. Cabernet Merlot</nav>
+						<div class="product type-product has-post-thumbnail first">
+							<div class="images">
+								<a href="<?=$product['images'][0]['imageUrl']?>" class="woocommerce-main-image zoom" title="" data-rel="prettyPhoto[product-gallery]"><img width="540" height="720" src="<?=$product['images'][0]['imageUrl']?>" alt="" title="" /></a>
+								<div class="thumbnails columns-4">
+									<? foreach($product['images'] as $index => $image): ?>
+										<? if($index>0): ?>
+											<a href="<?=$image['imageUrl']?>" class="zoom first" title="" data-rel="prettyPhoto[product-gallery]"><img width="180" height="240" src="<?=$image['imageUrl']?>" class="attachment-shop_thumbnail size-shop_thumbnail" alt="" title="" /></a>
+										<? endif; ?>
+									<? endforeach; ?>
+								</div>
+							</div>
+							<div class="summary entry-summary">
+								<h1 class="product_title entry-title"><?=$product['name']?></h1>
+								<!-- <div class="woocommerce-product-rating">
+									<div class="star-rating" title="Rated 5 out of 5">
+										<span style="width:100%"><strong class="rating">5</strong> out of <span>5</span> based on <span class="rating">1</span> customer rating </span>
+									</div>
+									<a href="#reviews" class="woocommerce-review-link" rel="nofollow">(<span  class="count">1</span> customer review)</a> </div> -->
+								<div>
+									<p class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol"></span><?=$product['price']?> ₽</span></p>
+								</div>
+								<!-- <div>
+									<p><strong>TASTE:</strong> Delicate fresh blossom aromas teamed with juicy lemon flavours.</p>
+									<p><strong>SMELL:</strong> Finely balanced, showing juicy lemon and lime flavours, supported by elegant mineral acidity.</p>
+									<p><strong>COMPLEMENTS:</strong> Oysters with mirin dressing or seared scallops with mediterranean vegetables tossed with lemon dressing.</p>
+								</div>
+								<form class="cart" method="post" enctype='multipart/form-data'>
+									<div class="quantity">
+										<input type="number" step="1" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" />
+									</div>
+									<input type="hidden" name="add-to-cart" value="403" />
+									<a href="cart.html" class="single_add_to_cart_button button alt">Buy now</a>
+								</form> -->
+								<div class="product_meta">
+									<span class="product_id">Артикул: <span><?=$product['vendor_code']?></span></span>
+									<? foreach($product['specifications'] as $title => $content): ?>
+										<? if($title === 'Производитель'): ?>
+											<?php 
+												$link = isset($product['specifications']['Сайт производителя']) ? $product['specifications']['Сайт производителя'] : null;
+											?>
+											<span class="posted_in"><?=$title?>: <span><?=$content?>
+											<? if(isset($link)): ?>
+												, <a href="shop.html" rel="tag"><?=$link?> </a>
+											<? endif; ?>												
+											</span></span>
+										<? elseif($title === 'Сайт производителя'): ?>
+										<? else: ?>
+											<span class="product_id"><?=$title?>: <span><?=$content?></span></span>
+										<? endif; ?>
+									<? endforeach; ?>
+									<span class="tagged_as">Теги: 
+										<? foreach($product['tags'] as $tagTitle => $tagParams): ?>
+											<span><?=$tagTitle?> 
+												<? foreach($tagParams as $index => $tag): ?>
+													<a href="" rel="tag"><?=$tag?></a><?php if(isset($tagParams[$index+1])) echo ',' ?>
+												<? endforeach; ?>
+										<? endforeach; ?>
+									</span>
+								</div>
+							</div>
+							<div class="woocommerce-tabs wc-tabs-wrapper">
+								<ul class="tabs wc-tabs">
+									<li class="description_tab">
+										<a href="#tab-description">Описание</a>
+									</li>
+									<li class="reviews_tab">
+										<a href="#tab-reviews">Отзывы (1)</a>
+									</li>
+								</ul>
+								<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab" id="tab-description">
+									<h2>Описание</h2>
+									<p>Компания &laquo;Trivento&raquo; работает в&nbsp;знаменитой провинции Мендоса и&nbsp;входит в&nbsp;число крупнейших винодельческих компаний Аргентины. В&nbsp;1996 году крупнейший чилийский производитель Конча и&nbsp;Торо скупил виноградники в&nbsp;провинции Мендоса и&nbsp;создал дочернюю фирму &laquo;Тривенто&raquo;, которая за&nbsp;недолгое время своего существования смогла добиться признания и&nbsp;в&nbsp;Аргентине, и&nbsp;на&nbsp;международном рынке. Сейчас вина &laquo;Trivento&raquo; регулярно получают награды на&nbsp;международных конкурсах и&nbsp;экспортируются на&nbsp;рынки около ста стран мира. Компания была названа в&nbsp;соответствии с&nbsp;особенностями климата провинции Мендоса. &laquo;Trivento&raquo; в&nbsp;переводе с&nbsp;испанского означает &laquo;три ветра&raquo;. Ледяной сухой полярный ветер Полар означает наступление зимы и&nbsp;начало обрезки лоз. С&nbsp;Андских гор весь год дует ветер Сонда, но&nbsp;особенно он&nbsp;усиливается в&nbsp;начале весны и&nbsp;приносит тепло, способствующее появлению почек. Ветер Судестада дует летом с&nbsp;океана и&nbsp;охлаждает гроздья винограда от&nbsp;влияния жаркого солнца.</p>
+									<p>В&nbsp;настоящее время компании &laquo;Тривенто&raquo; принадлежит 1289 гектаров виноградников в&nbsp;разных регионах Мендосы. Большая часть расположена в&nbsp;долине Уко, Восточном оазисе и&nbsp;оазисе Лухан-Майпу. Урожай винограда перерабатывается на&nbsp;трех винодельнях, которые оснащены новейшим оборудованием, что гарантирует высокое качество производимых вин. С&nbsp;каждым годом популярность вин Trivento в&nbsp;Аргентине, в&nbsp;США и&nbsp;Европе растет. Объем годовых продаж составляет более 2,5 миллионов ящиков вина. Подробнее: https://winestyle.ru</p>
+								</div>
+								<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--reviews panel entry-content wc-tab" id="tab-reviews">
+									<div id="reviews" class="woocommerce-Reviews">
+										<div id="comments">
+											<h2 class="woocommerce-Reviews-title">1 отзыв <span>1837. CABERNET MERLOT / Каберне мерло</span></h2>
+											<ol class="commentlist">
+												<li  class="comment byuser comment-author-trx_admin bypostauthor even thread-even depth-1" id="li-comment-6">
+													<div id="comment-6" class="comment_container">
+														<img alt='' src='images/avatar.jpg' class='avatar avatar-60 photo' height='60' width='60' />
+														<div class="comment-text">
+															<div   class="star-rating" title="Rated 5 out of 5">
+																<span style="width:100%"><strong>5</strong> out of 5</span>
+															</div>
+															<p class="meta">
+																<strong >Марина А.</strong> &ndash; <time datetime="2016-06-09T07:24:33+00:00">Июль 2018</time>:
+															</p>
+															<div class="description">
+																<p>Очень вкусно. Отличное сочетание цены и качества.</p>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ol>
+										</div>
+										<div id="review_form_wrapper">
+											<div id="review_form">
+												<div id="respond" class="comment-respond">
+													<h3 id="reply-title" class="comment-reply-title">Добавить отзыв<small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond" style="display:none;">Cancel reply</a></small></h3>
+													<form action="#" method="post" id="commentform" class="comment-form" novalidate>
+														<p class="comment-notes"><span id="email-notes">Ваш адрес электронной почты не будет опубликован.</span> Заполните поля, отмеченные <span class="required">*</span></p>
+														<p class="comment-form-rating"><label for="rating">Ваш рейтинг</label><select name="rating" id="rating" required>
+														<option value="">Рейтинг&hellip;</option>
+														<option value="5">Отлично</option>
+														<option value="4">Хорошо</option>
+														<option value="3">Средне</option>
+														<option value="2">Плохо</option>
+														<option value="1">Очень плохо</option>
+														</select></p>
+														<p class="comment-form-comment"><label for="comment">Ваш отзыв <span class="required">*</span></label><textarea id="comment" name="comment" cols="45" rows="8" required></textarea></p>
+														<p class="comment-form-author"><label for="author">Имя <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" required /></p>
+														<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" required /></p>
+														<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Отправить" /> <input type='hidden' name='comment_post_ID' value='403' id='comment_post_ID' />
+															<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+														</p>
+													</form>
+												</div>
+											</div>
+										</div>
+										<div class="clear"></div>
+									</div>
+								</div>
+							</div>
+							<div class="related products">
+								<h2>Рекомендации</h2>
+								<ul class="products">
+									<li class="product type-product has-post-thumbnail column-1_3 first">
+										<div class="post_item post_layout_thumbs">
+											<div class="post_featured hover_shop">
+												<a href="product.html">
+													<img width="360" height="480" src="images/Classic_CabernetSauvignon_43x2-360x480.png" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="Classic_CabernetSauvignon_43x2" title="Classic_CabernetSauvignon_43x2"/> </a>
+												<div class="mask"></div>
+												<div class="icons">
+													<a rel="nofollow" href="#" aria-hidden="true" data-quantity="1" data-product_id="401" data-product_sku="" class="shop_cart icon-shopping-cart button add_to_cart_button product_type_simple ajax_add_to_cart"></a>
+													<a href="product.html" aria-hidden="true" class="shop_link icon-link"></a>
+												</div>
+											</div>
+											<div class="post_data">
+												<div class="post_header entry-header">
+													<div class="post_tags product_tags"><a href="product.html" rel="tag">2018</a></div>
+													<h3><a href="product.html">Вино Trivento</a></h3>
+												</div>
+												<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol"></span>1 760 ₽</span>
+												</span>
+												<a rel="nofollow" href="#" data-quantity="1" data-product_id="401" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Купить</a> </div>
+										</div>
+									</li>
+									<li class="product type-product has-post-thumbnail column-1_3 ">
+										<div class="post_item post_layout_thumbs">
+											<div class="post_featured hover_shop">
+												<a href="product.html">
+													<img width="360" height="480" src="images/kaO0w6Nl-FineWines_CentenaryHill_Shiraz_43x2-360x480.png" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="kaO0w6Nl-FineWines_CentenaryHill_Shiraz_43x2" title="kaO0w6Nl-FineWines_CentenaryHill_Shiraz_43x2" /> </a>
+												<div class="mask"></div>
+												<div class="icons">
+													<a rel="nofollow" href="#" aria-hidden="true" data-quantity="1" data-product_id="406" data-product_sku="" class="shop_cart icon-shopping-cart button add_to_cart_button product_type_simple ajax_add_to_cart"></a>
+													<a href="product.html" aria-hidden="true" class="shop_link icon-link"></a>
+												</div>
+											</div>
+											<div class="post_data">
+												<div class="post_header entry-header">
+													<div class="post_tags product_tags"><a href="product.html" rel="tag">2018</a></div>
+													<h3><a href="product.html">Вино Trivento</a></h3>
+												</div>
+												<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol"></span>1 760 ₽</span>
+												</span>
+												<a rel="nofollow" href="#" data-quantity="1" data-product_id="406" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Купить</a> </div>
+										</div>
+									</li>
+									<li class="product type-product has-post-thumbnail column-1_3 last">
+										<div class="post_item post_layout_thumbs">
+											<div class="post_featured hover_shop">
+												<a href="product.html">
+													<img width="360" height="480" src="images/FineWines_Johann_ShirazCabernet_43x2-360x480.png" alt="FineWines_Johann_ShirazCabernet_43x2" title="FineWines_Johann_ShirazCabernet_43x2" /> </a>
+												<div class="mask"></div>
+												<div class="icons">
+													<a rel="nofollow" href="#" aria-hidden="true" data-quantity="1" data-product_id="402" data-product_sku="" class="shop_cart icon-shopping-cart button add_to_cart_button product_type_simple ajax_add_to_cart"></a>
+													<a href="product.html" aria-hidden="true" class="shop_link icon-link"></a>
+												</div>
+											</div>
+											<div class="post_data">
+												<div class="post_header entry-header">
+													<div class="post_tags product_tags"><a href="product.html" rel="tag">2018</a></div>
+													<h3><a href="product.html">Вино Trivento</a></h3>
+												</div>
+												<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol"></span>1 760 ₽</span>
+												</span>
+												<a rel="nofollow" href="#" data-quantity="1" data-product_id="402" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Купить</a> </div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="related products">
+								<? if($product['facts']): ?>
+									<h2>Интересные факты</h2>
+									<div>
+										<p><?=$product['facts']?></p>
+									</div>
+								<? endif; ?>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="site_footer_wrap scheme_dark">
+			<div class="socials_footer_wrap socials_wrap scheme_dark">
+				<div class="socials_footer_wrap_inner">
+					<span class="social_item"><a href="#" target="_blank" class="social_icons social_twitter"><span class="trx_addons_icon-twitter"></span></a>
+					</span><span class="social_item"><a href="#" target="_blank" class="social_icons social_facebook"><span class="trx_addons_icon-facebook"></span></a>
+					</span><span class="social_item"><a href="#" target="_blank" class="social_icons social_gplus"><span class="trx_addons_icon-gplus"></span></a>
+					</span>
+				</div>
+			</div>
+			<div class="menu_footer_wrap scheme_dark">
+				<div class="menu_footer_wrap_inner">
+					<nav class="menu_footer_nav_area">
+						<ul id="menu_footer" class="menu_footer_nav">
+							<li class="menu-item menu-item-143"><a href="home3.html"><span>Вино</span></a></li>
+							<li class="menu-item menu-item-675"><a href="about-us.html"><span>Шампанское</span></a></li>
+							<li class="menu-item menu-item-677"><a href="wine-list.html"><span>Виски</span></a></li>
+							<li class="menu-item menu-item-147"><a href="index.html"><span>Коньяк</span></a></li>
+							<li class="menu-item menu-item-676"><a href="contacts.html"><span>Аксессуары</span></a></li>
+							<li class="menu-item menu-item-676"><a href="contacts.html"><span>О нас</span></a></li>
+							<li class="menu-item menu-item-676"><a href="contacts.html"><span>Контакты</span></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</footer>
+	</div>
+	</div>
+	<script type='text/javascript' src='js/vendor/jquery.js'></script>
+	<script type='text/javascript' src='js/vendor/jquery-migrate.min.js'></script>
+	<script type='text/javascript' src='js/vendor/plugins/trx_addons/js/magnific/jquery.magnific-popup.min.js'></script>
+	<script type='text/javascript' src='js/vendor/plugins/trx_addons/js/trx_addons.js'></script>
+	<script type='text/javascript' src='js/vendor/plugins/woocommerce/assets/js/prettyPhoto/jquery.prettyPhoto.min.js'></script>
+	<script type='text/javascript' src='js/vendor/plugins/woocommerce/assets/js/prettyPhoto/jquery.prettyPhoto.init.min.js'></script>
+	<script type='text/javascript' src='js/vendor/plugins/woocommerce/assets/js/frontend/single-product.min.js'></script>
+	<script type='text/javascript' src='js/vendor/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js'></script>
+	<script type='text/javascript' src='js/vendor/plugins/woocommerce/assets/js/frontend/woocommerce.min.js'></script>
+	<script type='text/javascript' src='js/vendor/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min.js'></script>
+	<script type='text/javascript' src='js/vendor/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js'></script>
+	<script type='text/javascript' src='js/vendor/ui/widget.min.js'></script>
+	<script type='text/javascript' src='js/vendor/ui/tabs.min.js'></script>
+	<script type='text/javascript' src='js/scripts.js'></script>
+	<script type='text/javascript' src='js/custom/custom.js'></script>
+	<script type='text/javascript' src='js/data.js'></script>
+	<a href="#" class="trx_addons_scroll_to_top trx_addons_icon-up" title="Scroll to top"></a>
+</body>
+</html>
